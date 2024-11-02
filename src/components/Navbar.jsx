@@ -21,6 +21,8 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Include Introduction here in this section */}
+
       <div className="flex items-center space-x-4 w-full max-w-md">
         <MdHome className="text-white w-8 h-8" />
 

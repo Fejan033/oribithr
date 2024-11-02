@@ -1,12 +1,17 @@
 import React from 'react';
-import Navbar from './Navbar'
-
-
+import Navbar from './Navbar';
+import Sidebar from './Sidebar';
 
 const Home = () => {
   return (
-    <div className='bg-[#f6f6f6]'>
+    <div className='h-screen w-screen flex flex-col'>
       <Navbar />
+      <div className='flex flex-1'>
+        <Sidebar />
+        <div className='flex-1 bg-[#f6f6f6]'>
+          {/* Main content goes here */}
+        </div>
+      </div>
     </div>
   );
 };
