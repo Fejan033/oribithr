@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import logo from "../resources/logo.png";
 import { MdHome } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
+import profile from "../resources/profile.png";
 
 const Navbar = () => {
-  const [searchText, setSearchText] = useState(""); 
+  const [searchText, setSearchText] = useState("");
 
   const searchItem = (event) => {
     event.preventDefault();
     console.log("Searching for:", searchText);
-    setSearchText(""); 
+    setSearchText("");
   };
 
   return (
     <div className="w-full h-16 bg-[#02563D] flex items-center justify-between px-4">
-      
       <div className="flex items-center">
         <div className="rounded-full h-12 w-12 flex items-center justify-center overflow-hidden">
           <img src={logo} alt="logo" className="h-full w-full object-cover" />
@@ -34,15 +34,17 @@ const Navbar = () => {
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
-          <button onClick={searchItem} className="p-2 text-gray-600 hover:text-gray-800">
+          <button
+            onClick={searchItem}
+            className="p-2 text-gray-600 hover:text-gray-800"
+          >
             <FaSearch className="w-5 h-5" />
           </button>
         </div>
       </div>
 
-     
-      <div className="rounded-full bg-gray-400 h-12 w-12 flex items-center justify-center">
-        <span className="text-white">P</span>
+      <div className="rounded-full h-12 w-12 flex items-center justify-center overflow-hidden">
+        <img src={profile} alt="logo" className="h-full w-full object-cover" />
       </div>
     </div>
   );

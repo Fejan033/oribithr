@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
+import Dashboard from './Dashboard';
+
 
 const Home = () => {
   return (
@@ -9,7 +11,7 @@ const Home = () => {
       <div className='flex flex-1'>
         <Sidebar />
         <div className='flex-1 bg-[#f6f6f6]'>
-          {/* Main content goes here */}
+          <Dashboard/>
         </div>
       </div>
     </div>
