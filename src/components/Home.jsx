@@ -5,7 +5,7 @@ import Dashboard from './Dashboard';
 
 
 const Home = () => {
-  return (
+  return (   
     <div className='h-screen w-screen flex flex-col'>
       <Navbar />
       <div className='flex flex-1'>

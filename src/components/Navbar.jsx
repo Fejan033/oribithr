@@ -14,17 +14,23 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-16 bg-[#02563D] flex items-center justify-between px-4">
+    <div className="w-full h-16 bg-[#0077B5] flex items-center justify-between px-4">
       <div className="flex items-center">
         <div className="rounded-full h-12 w-12 flex items-center justify-center overflow-hidden">
-          <img src={logo} alt="logo" className="h-full w-full object-cover" />
+          <img
+            src={logo}
+            alt="logo"
+            className="h-full w-full object-cover cursor-pointer"
+            title="Oribit HR"
+          />
         </div>
+        <h2 className="text-2xl font-bold text-gray-800 ml-4">Orbit HR</h2>
       </div>
 
       {/* Include Introduction here in this section */}
 
       <div className="flex items-center space-x-4 w-full max-w-md">
-        <MdHome className="text-white w-8 h-8" />
+        <MdHome className="text-white w-8 h-8 cursor-pointer" title="Home" />
 
         <div className="flex items-center w-full bg-[#f6f6f6] rounded-xl">
           <input

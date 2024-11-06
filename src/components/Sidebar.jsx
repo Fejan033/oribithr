@@ -4,7 +4,7 @@ import { FaTasks, FaRegPaperPlane } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col h-full w-12 bg-[#2f7f67]">
+    <div className="flex flex-col h-full w-12 bg-[#66C5E9]">
       <div className="flex flex-col gap-4 justify-start items-center pt-4 flex-1">
         <div>
           <MdHome className="text-white w-6 h-6  hover:text-gray-950 cursor-pointer text-2xl"  title="Home"/>
@@ -18,7 +18,7 @@ const Sidebar = () => {
       </div>
       
       <div className="py-4 self-center">
-        <MdSettings className="text-white w-6 h-6" />
+        <MdSettings className="text-white w-6 h-6 hover:text-gray-950 cursor-pointer text-2xl" title="Setting"/>
       </div>
     </div>
   );
