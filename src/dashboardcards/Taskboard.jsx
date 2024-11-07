@@ -31,8 +31,8 @@ const TaskList = () => {
   ];
 
   return (
-    <div className="p-3 bg-white rounded-xl shadow-md w-96 h-4/5">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4 bg-gray-200 rounded-lg text-center">Task List</h2>
+    <div className="p-3 bg-white rounded-xl shadow-md">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4 bg-gray-100 rounded-lg text-center">Task List</h2>
       <ul className="space-y-4">
         {tasks.map((task) => (
           <li key={task.id} className="p-4 bg-gray-100 rounded-lg flex flex-col">

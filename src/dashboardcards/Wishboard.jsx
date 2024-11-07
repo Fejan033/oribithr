@@ -41,11 +41,11 @@ const Wishboard = () => {
   ];
 
   return (
-    <div className="bg-white rounded-xl p-3">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-1 bg-gray-200 rounded-lg text-center">
+    <div className="bg-white rounded-xl p-3 pb-2">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-1 rounded-lg text-left">
         Special Messages
       </h2>
-      <div className="p-3 bg-white rounded-xl mb-4 shadow-md w-96 h-72 overflow-y-auto">
+      <div className="p-3 bg-white rounded-xl mb-4 shadow-md h-56 overflow-y-scroll">
         <ul className="space-y-2 h-36 ">
           {employeeWishes.map((employee) => (
             <li key={employee.id} className="p-3 bg-blue-100 rounded-lg">

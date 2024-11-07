@@ -26,13 +26,13 @@ const Noticeboard = () => {
 
   return (
     <div className="bg-white rounded-xl p-3">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4 bg-gray-200 rounded-lg text-center">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4 rounded-lg text-left">
       What's New
       </h2>
-      <div className="p-3 bg-white rounded-xl shadow-md w-96 h-64 overflow-y-scroll">
+      <div className="p-3 bg-white rounded-xl shadow-md h-56 overflow-y-scroll">
         <ul className="space-y-4">
           {notices.map((notice) => (
-            <li key={notice.id} className="p-3 bg-blue-100 rounded-lg">
+            <li key={notice.id} className="p-3 rounded-lg">
               <div className="text-sm font-medium text-slate-500">
                 {notice.notice}
               </div>
