@@ -31,7 +31,7 @@ const TaskList = () => {
   ];
 
   return (
-    <div className="p-3 bg-white rounded-xl shadow-md">
+    <div className="p-3 bg-slate-200  rounded-xl shadow-md">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4 bg-gray-100 rounded-lg text-center">Task List</h2>
       <ul className="space-y-4">
         {tasks.map((task) => (

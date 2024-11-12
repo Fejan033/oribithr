@@ -3,6 +3,7 @@ import logo from "../resources/logo.png";
 import { MdHome } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
 import profile from "../resources/profile.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [searchText, setSearchText] = useState("");
@@ -11,6 +12,12 @@ const Navbar = () => {
     event.preventDefault();
     console.log("Searching for:", searchText);
     setSearchText("");
+  };
+
+  const navigate = useNavigate();
+
+  const ToHome = () => {
+    navigate("/");
   };
 
   return (
@@ -30,7 +37,7 @@ const Navbar = () => {
       {/* Include Introduction here in this section */}
 
       <div className="flex items-center space-x-4 w-full max-w-md">
-        <MdHome className="text-white w-8 h-8 cursor-pointer" title="Home" />
+        <MdHome onClick={ToHome} className="text-white w-8 h-8 cursor-pointer" title="Home" />
 
         <div className="flex items-center w-full bg-[#f6f6f6] rounded-xl">
           <input

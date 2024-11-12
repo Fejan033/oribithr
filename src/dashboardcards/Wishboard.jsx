@@ -41,7 +41,7 @@ const Wishboard = () => {
   ];
 
   return (
-    <div className="bg-white rounded-xl p-3 pb-2">
+    <div className="bg-slate-200  rounded-xl p-3 pb-2">
       <h2 className="text-2xl font-semibold text-gray-800 mb-1 rounded-lg text-left">
         Special Messages
       </h2>

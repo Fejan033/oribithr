@@ -3,7 +3,7 @@ import profile from '../resources/profile.png';
 
 const EmpProfile = () => {
   return (
-    <div className="p-5 bg-gray-50 shadow-md rounded-xl h-48">
+    <div className="p-5 bg-slate-200  shadow-md rounded-xl h-48">
       <div className="flex flex-row items-center space-x-4">
         <div className="h-16 w-16 rounded-full overflow-hidden">
           <img src={profile} alt="profile" className="h-full w-full object-cover" />
