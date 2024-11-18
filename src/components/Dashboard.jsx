@@ -8,7 +8,7 @@ import LeaveManager from "../dashboardcards/LeaveManager";
 const Dashboard = () => {
   return (
     <div className="flex flex-row gap-3 p-2 h-full overflow-y-auto ">
-      {/* Left column with fixed width */}
+      
       <div className="flex-1 flex-col w-96 gap-2 space-y-3">
         <EmpProfile />
         <TaskList  className="flex-1"/>
