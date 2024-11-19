@@ -34,7 +34,7 @@ const Navbar = () => {
         <h2 className="text-2xl font-bold text-gray-800 ml-4">Orbit HR</h2>
       </div>
 
-      {/* Include Introduction here in this section */}
+      
 
       <div className="flex items-center space-x-4 w-full max-w-md">
         <MdHome onClick={ToHome} className="text-white w-8 h-8 cursor-pointer" title="Home" />
